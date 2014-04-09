@@ -8,6 +8,7 @@
 	<link rel="stylesheet" media="screen" href="css/screen.css" >
 	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
 	<script src="js/jquery.js"></script>
+	<script src="http://api-maps.yandex.ru/2.1-dev/?lang=ru-RU&load=package.full" type="text/javascript"></script>
 	<script src="js/common.js"></script>
 </head>
 <body>
@@ -53,15 +54,144 @@
 			<div class="about">
 				<div class="about__left">
 					<h3 class="h3">Система обогрева на основе саморегулирующегося нагревательного кабеля совместима с любыми объектами</h3>
+					<ul class="about__list">
+						<li class="about__item">
+							<div class="about__img">
+								<img src="img/roof-ico.png" alt="">
+							</div>		
+							<p>крыши</p>
+						</li>
+						<li class="about__item">
+							<div class="about__img">
+								<img src="img/drain-ico.png" alt="">
+							</div>	
+							<p>водостоки</p>
+						</li>
+						<li class="about__item">
+							<div class="about__img">
+								<img src="img/place-ico.png" alt="">
+							</div>	
+							<p>открытые площадки</p>
+						</li>
+					</ul>
+					<p class="about__text">Локальное потепление — лучшее средство для борьбы со снегом и льдом.  Вместо того чтобы колоть ледь на крыше и заниматься расчисткой сугробов, гораздо проще, безопаснее и экономичнее создать эффектную систему обогрева в проблемных зонах — на крыше и водостоках, на крыльце, на тротуарах, на парковке или выезде из гаража</p>
 				</div>
 				<div class="about__right">
-					
+					<div class="about__years">
+						<p>25</p>
+						<span>лет службы</span>
+					</div>
+					<div class="about__warranty">
+						<p>3</p>
+						<span>года гарантии</span>	
+					</div>
 				</div>
 			</div>
 		</div>
 	</section>
 	<!-- END section -->
-
+	<!-- BEGIN benefits -->
+	<section class="benefits">
+		<div class="container">
+			<div class="benefits__top">
+				<ul class="features">
+					<li class="features__item">
+						<div class="features__img">
+							<img src="img/wire.png" alt="">
+						</div>
+						<p>Работаем только с высококлассным японским кабелем HFT. Гарантия на кабель 5 лет.</p>
+					</li>
+					<li class="features__item">
+						<div class="features__img">
+							<img src="img/automatic.png" alt="">
+						</div>
+						<p>Применяем системы интеллектуального обогрева от SMC.</p>
+					</li>
+					<li class="features__item">
+						<div class="features__img">
+							<img src="img/worker.png" alt="">
+						</div>
+						<p>Опытный персонал  со стажем работы от 5 лет.</p>
+					</li>
+				</ul>
+				<div class="numbers">
+					<div class="experience">
+						<div class="experience__years">20</div>
+						<div class="experience__top">лет</div>
+						<div class="experience__text">занимаемся<br>монтажём,<br>работаем<br>с 1994 года</div>
+					</div>
+					<div class="guarantee">
+						<div class="guarantee__years">3</div>
+						<div class="guarantee__top">Года гарантии<br>на всю систему</div>
+						<div class="guarantee__text">Гарантия на кабель 5 лет.</div>
+					</div>
+				</div>
+			</div>
+			<h2 class="h2">Бесплатное сервисное<br>обслуживание два раза в год</h2>
+			<div class="services">
+				<div class="services__col">
+					<div class="services__title">Профилактическое тестирование системы,<br> проверка технических параметров:</div>
+					<div class="services__lists">
+						<ul>
+							<li>Измерение сопротивления изоляции силовых линий</li>
+							<li>Проверка рабостоспособоности защиты</li>
+							<li>Тестирование регулятора</li>
+						</ul>
+						<ul>
+							<li>Контроль соответсвия мощностей системы проектным данным</li>
+							<li>Проверка петли фаза-ноль с выдачей необходимых протоколов по требованию заказчкика</li>
+							<li>Регулировка чувствительности датчиков системы</li>
+						</ul>
+					</div>
+				</div>
+				<div class="services__col">
+					<div class="services__title">Внешний осмотр системы</div>
+					<div class="services__lists">
+						<ul>
+							<li>Профилактический осмотр крепежа нагревательных секций</li>
+							<li>Профилактический осмотр и очистка датчиков системы</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- END benefits -->
+	<!-- BEGIN contacts -->
+	<section class="contacts">
+		<div class="container">
+			<h2 class="h2">Для получения расчёта обращайтесь сюда: <span>8 (495) 215-14-22</span></h2>
+			<div class="map-wrap">
+				<div id="YMapsID" class="map"></div>
+				<div class="map__info">
+					<div class="map__title">Контактная<br>информация</div>
+					<div class="tabs">
+						<ul class="tabs__list">
+							<li><a class="is-active" href="#">Москва</a></li>
+							<li><a href="#">Санкт-Петербург</a></li>
+						</ul>
+						<div class="tab__content">
+							<p>ул. Лётчика Бабушкина, дом 1<br>корпус 3<br>8 (495) 215-14-22</p>
+							<p> (800) 555-35-14<br>Звонок по России бесплатный</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- END contacts -->
+	<!-- BEGIN footer -->
+	<footer class="footer">
+		<div class="container clr">
+			<div class="footer__left">
+				<p>© 1999–2013 Потеплеет. Системы электрообогрева.</p>
+			</div>
+			<div class="footer__right">
+				<span>разработка сайта —</span> <a href="#" class="forma"><img src="img/forma.png" alt=""></a>
+			</div>
+		</div>
+	</footer>
+	<!-- END footer -->
 </div>
 <!-- END out-->
 
