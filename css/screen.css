@@ -43,14 +43,14 @@ body { font-size: 15px; font-family: "RobotoRegular", sans-serif; line-height: 1
 
 .header__animation { position: absolute; top: 0; bottom: 0; left: 0; width: 100%; background: #e5eaec url(../img/topper1-bg.png) 49% 149px no-repeat; }
 
-.header__topper { position: relative; *zoom: 1; padding: 40px 0px 0; height: 592px; z-index: 2; }
+.header__topper { position: relative; *zoom: 1; padding: 40px 0px 0; height: 574px; z-index: 2; }
 .header__topper:after { content: " "; display: table; clear: both; }
 
-.header__left, .header__right { width: 580px; font-family: "NovitoNovaRegular", sans-serif; text-transform: uppercase; font-size: 90px; line-height: 1; color: #464441; }
+.header__left, .header__right { width: 580px; padding-left: 68px; font-family: "NovitoNovaRegular", sans-serif; text-transform: uppercase; font-size: 90px; line-height: 1; color: #464441; }
 
-.header__right { float: right; text-align: right; }
+.header__right { float: right; padding-left: 0; text-align: right; }
 
-.header__mid { position: absolute; top: 60px; margin-left: -47px; text-align: center; z-index: 2; }
+.header__mid { position: absolute; top: 14px; left: 50%; margin-left: -47px; text-align: center; z-index: 2; }
 .header__mid span { display: inline-block; width: 94px; height: 94px; line-height: 94px; -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; border-radius: 50%; background: #ffc300; font-family: "NovitoNovaRegular", sans-serif; text-transform: uppercase; text-align: center; font-size: 60px; color: white; }
 
 .topper { height: 89px; border-bottom: 1px solid #e5e5e5; }
@@ -58,67 +58,67 @@ body { font-size: 15px; font-family: "RobotoRegular", sans-serif; line-height: 1
 .logo { float: left; padding-top: 20px; }
 .logo a { display: block; background: url('../img/icons-sad81582512.png') 0 0 no-repeat; width: 228px; height: 54px; }
 
-.topper__phone { float: right; font-family: "RobotoBlack", sans-serif; color: #464441; line-height: 89px; }
+.topper__phone { float: right; font-family: "RobotoBlack", sans-serif; color: #464441; line-height: 92px; }
 
 .nav { overflow: hidden; }
-.nav ul { text-align: center; }
-.nav ul li { display: inline-block; margin: 0 25px; }
-.nav ul li a { line-height: 89px; color: #464441; text-decoration: none; }
+.nav ul { margin-left: 119px; }
+.nav ul li { display: inline-block; margin: 0 21px; }
+.nav ul li a { position: relative; top: 4px; line-height: 89px; color: #464441; text-decoration: none; }
 .nav ul li a:hover { text-decoration: underline; color: black; }
 .nav ul li a.is-active { color: #ffc300; text-decoration: underline; }
 
-.about { *zoom: 1; padding: 70px 0 30px; }
+.about { *zoom: 1; padding: 55px 0 44px; }
 .about:after { content: " "; display: table; clear: both; }
 
 .about__left { float: left; width: 666px; }
 
-.about__right { position: relative; float: right; width: 494px; min-height: 531px; background: url(../img/roof.png) 0 0 no-repeat; }
+.about__right { position: relative; float: right; width: 494px; min-height: 531px; background: url(../img/roof.png) 0 16px no-repeat; }
 
 .h3 { margin-bottom: 50px; font-family: "NovitoNovaRegular", sans-serif; text-transform: uppercase; font-weight: normal; font-size: 60px; line-height: 1; color: #464441; }
 
-.about__years { position: absolute; top: 300px; left: 0px; width: 170px; height: 166px; text-align: center; background: url(../img/round-white.png) 0 0 no-repeat; font-family: "NovitoNovaRegular", sans-serif; text-transform: uppercase; color: #464441; z-index: 1; }
+.about__years { position: absolute; top: 318px; left: -30px; width: 170px; height: 166px; text-align: center; background: url(../img/round-white.png) 0 0 no-repeat; font-family: "NovitoNovaRegular", sans-serif; text-transform: uppercase; color: #464441; z-index: 1; }
 .about__years p, .about__years span { position: relative; top: -10px; }
 .about__years p { font-size: 120px; line-height: 1; }
 .about__years span { font-size: 30px; line-height: 1; }
 
-.about__warranty { position: absolute; top: 430px; left: 106px; height: 59px; width: 120px; font-family: "NovitoNovaRegular", sans-serif; text-transform: uppercase; color: #464441; z-index: 2; }
+.about__warranty { position: absolute; top: 448px; left: 68px; height: 59px; width: 120px; font-family: "NovitoNovaRegular", sans-serif; text-transform: uppercase; color: #464441; z-index: 2; }
 .about__warranty p { float: left; width: 59px; height: 59px; margin-right: 7px; text-align: center; font-size: 42px; background: url(../img/round-yellow.png) 0 0 no-repeat; }
 .about__warranty span { display: block; padding-top: 5px; font-size: 21px; line-height: 1; }
 
-.about__list { text-align: justify; line-height: 0; font-size: 1px; text-justify: newspaper; zoom: 1; text-align-last: justify; margin-bottom: 40px; }
-.about__list:after { content: ""; display: inline-block; width: 100%; height: 0px; visibility: hidden; overflow: hidden; }
+.about__list { *zoom: 1; margin-bottom: 35px; }
+.about__list:after { content: " "; display: table; clear: both; }
 
-.about__item { width: 33%; display: inline-block; line-height: normal; vertical-align: top; font-size: 15px; text-align: center; vertical-align: bottom; }
-.about__item .about__img { min-height: 80px; }
+.about__item { width: 181px; float: left; text-align: center; vertical-align: bottom; }
+.about__item .about__img { min-height: 84px; }
 .about__item p { font-family: "NovitoNovaRegular", sans-serif; text-transform: uppercase; font-size: 21px; }
 
-.about__text { line-height: 1.6; }
+.about__text { width: 85%; line-height: 1.6; }
 
-.benefits { padding: 30px 0; border-bottom: 1px solid #e5e5e5; }
+.benefits { padding: 30px 0 25px; border-bottom: 1px solid #e5e5e5; }
 
-.benefits__top { *zoom: 1; }
+.benefits__top { *zoom: 1; margin-bottom: -52px; }
 .benefits__top:after { content: " "; display: table; clear: both; }
 
-.features { float: left; width: 840px; text-align: justify; line-height: 0; font-size: 1px; text-justify: newspaper; zoom: 1; text-align-last: justify; }
+.features { float: left; width: 863px; text-align: justify; line-height: 0; font-size: 1px; text-justify: newspaper; zoom: 1; text-align-last: justify; }
 .features:after { content: ""; display: inline-block; width: 100%; height: 0px; visibility: hidden; overflow: hidden; }
 
 .features__item { width: 260px; display: inline-block; line-height: normal; vertical-align: top; font-size: 15px; }
 .features__item p { text-align: center; }
 
-.features__img { min-height: 200px; margin-bottom: 24px; text-align: center; }
+.features__img { min-height: 200px; margin-bottom: 20px; text-align: center; }
 
-.numbers { float: right; width: 320px; margin-top: -41px; }
+.numbers { float: right; width: 266px; margin-top: -33px; }
 
 .experience { *zoom: 1; }
 .experience:after { content: " "; display: table; clear: both; }
 
-.experience__years { float: left; margin-right: 8px; font-size: 200px; line-height: 1; font-family: "NovitoNovaRegular", sans-serif; text-transform: uppercase; color: #ffc300; }
+.experience__years { float: left; margin-right: -3px; font-size: 200px; line-height: 1; font-family: "NovitoNovaRegular", sans-serif; text-transform: uppercase; color: #ffc300; }
 
 .experience__top { font-family: "NovitoNovaRegular", sans-serif; text-transform: uppercase; padding-top: 18px; font-size: 90px; color: #464441; line-height: 1; }
 
 .experience__text { color: #464441; font-size: 13px; }
 
-.guarantee { *zoom: 1; }
+.guarantee { *zoom: 1; position: relative; top: -23px; }
 .guarantee:after { content: " "; display: table; clear: both; }
 
 .guarantee__years { float: left; font-family: "NovitoNovaRegular", sans-serif; text-transform: uppercase; margin-right: 20px; font-size: 200px; color: #464441; line-height: 1; }
@@ -130,19 +130,20 @@ body { font-size: 15px; font-family: "RobotoRegular", sans-serif; line-height: 1
 .h2 { font-family: "NovitoNovaRegular", sans-serif; text-transform: uppercase; line-height: 1; font-size: 120px; color: #ffc300; font-weight: normal; }
 .h2 span { color: #464441; }
 
-.services { *zoom: 1; padding-top: 20px; }
+.services { *zoom: 1; padding-top: 6px; }
 .services:after { content: " "; display: table; clear: both; }
 
-.services__col { float: left; margin-left: 50px; }
+.services__col { float: left; margin-left: 12px; }
 .services__col:first-child { margin-left: 0; }
 
 .services__title { font-family: "RobotoBlack", sans-serif; min-height: 50px; font-size: 21px; color: #464441; line-height: 1.2; margin-bottom: 30px; }
 
 .services__lists { *zoom: 1; }
 .services__lists:after { content: " "; display: table; clear: both; }
-.services__lists ul { float: left; margin-left: 50px; width: 250px; padding-left: 21px; }
+.services__lists ul { float: left; margin-left: 50px; width: 227px; padding-left: 21px; }
 .services__lists ul:first-child { margin-left: 0; }
-.services__lists ul li { position: relative; color: #464441; }
+.services__lists ul.wide { width: 268px; }
+.services__lists ul li { position: relative; color: #464441; margin-bottom: 10px; }
 .services__lists ul li:before { content: ""; position: absolute; top: 5px; left: -21px; width: 4px; height: 4px; -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; border-radius: 50%; background: #ffc300; }
 
 .contacts .h2 { margin-bottom: 40px; }
@@ -151,20 +152,20 @@ body { font-size: 15px; font-family: "RobotoRegular", sans-serif; line-height: 1
 
 .map { height: 316px; }
 
-.map__info { position: absolute; top: 0; right: 0; bottom: 0; width: 280px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding: 36px 15px 36px 36px; border: 5px solid #464441; border-left: none; background: white; }
+.map__info { position: absolute; top: 0; right: 0; bottom: 0; width: 280px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding: 26px 15px 36px 36px; border: 5px solid #464441; border-left: none; background: white; }
 
-.map__title { margin-bottom: 20px; font-family: "RobotoBlack", sans-serif; font-size: 21px; color: #464441; }
+.map__title { margin-bottom: 12px; font-family: "RobotoBlack", sans-serif; font-size: 21px; color: #464441; }
 
-.tabs__list { *zoom: 1; margin-bottom: 20px; }
+.tabs__list { *zoom: 1; margin-bottom: 15px; }
 .tabs__list:after { content: " "; display: table; clear: both; }
 .tabs__list li { float: left; margin-right: 22px; }
 .tabs__list li a { display: inline-block; text-decoration: none; color: #464441; line-height: 1; border-bottom: 1px dotted; }
 .tabs__list li a:hover, .tabs__list li a.is-active { color: #ffc300; }
 
-.tab__content { color: #464441; }
+.tab__content { color: #464441; margin-bottom: 31px; }
 .tab__content p { margin-bottom: 20px; }
 
-.footer { padding: 48px 0 40px; font-size: 13px; }
+.footer { padding: 41px 0 40px; font-size: 13px; }
 
 .footer__left { float: left; }
 
