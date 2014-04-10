@@ -42,9 +42,9 @@
 			<div class="topper__phone">8 (495) 215-14-22</div>
 			<nav class="nav">
 				<ul>
-					<li><a class="is-active" href="#">О системе</a></li>
-					<li><a href="#">О компании</a></li>
-					<li><a href="#">Контактная информация</a></li>
+					<li><a class="is-active" href="#section1">О системе</a></li>
+					<li><a href="#section2">О компании</a></li>
+					<li><a href="#section3">Контактная информация</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -52,7 +52,7 @@
 	</section>
 	<!-- END nav -->
 	<!-- BEGIN section -->
-	<section class="grey">
+	<section class="grey" id="section1">
 		<div class="container">
 			<div class="about">
 				<div class="about__left">
@@ -94,7 +94,7 @@
 	</section>
 	<!-- END section -->
 	<!-- BEGIN benefits -->
-	<section class="benefits">
+	<section class="benefits" id="section2">
 		<div class="container">
 			<div class="benefits__top">
 				<ul class="features">
@@ -161,22 +161,30 @@
 	</section>
 	<!-- END benefits -->
 	<!-- BEGIN contacts -->
-	<section class="contacts">
-		<div class="container">
-			<h2 class="h2">Для получения расчёта обращайтесь сюда: <span>8 (495) 215-14-22</span></h2>
+	<section class="contacts" id="section3">
+		<div class="container js-tab-group">
+			<h2 class="h2">Для получения расчёта обращайтесь сюда: <span class="js-tab-cont js-tab1">8 (495) 215-14-22</span><span class="js-tab-cont js-tab2">8 (222) 222-22-22</span></h2>
 			<div class="map-wrap">
-				<div id="YMapsID" class="map"></div>
+				<div class="js-tab-cont js-tab1">
+					<div id="YMapsID" class="map"></div>
+				</div>
+				<div class="js-tab-cont js-tab2">
+					<div id="YMapsID2" class="map"></div>
+				</div>
 				<div class="map__info">
 					<div class="map__title">Контактная<br>информация</div>
 					<div class="tabs">
-						<ul class="tabs__list">
-							<li><a class="is-active" href="#">Москва</a></li>
-							<li><a href="#">Санкт-Петербург</a></li>
+						<ul class="tabs__list js-tab">
+							<li><a class="is-active" href="js-tab1">Москва</a></li>
+							<li><a href="js-tab2">Санкт-Петербург</a></li>
 						</ul>
-						<div class="tab__content">
+						<div class="tab__content js-tab-cont js-tab1">
 							<p>ул. Лётчика Бабушкина, дом 1<br>корпус 3<br>8 (495) 215-14-22</p>
-							<p> (800) 555-35-14<br>Звонок по России бесплатный</p>
 						</div>
+						<div class="tab__content js-tab-cont js-tab2">
+							<p>ул. Лётчика Бабушкина, дом 2<br>корпус 2<br>8 (222) 222-22-22</p>
+						</div>
+						<p> 8 (800) 555-35-14<br>Звонок по России бесплатный</p>
 					</div>
 				</div>
 			</div>
