@@ -26,5 +26,35 @@ $(document).ready(function() {
 
       myMap.geoObjects.add(myPlacemark);
     });
+
+    // header__left text position
+
+    function left_width(){
+        var lw = $(".js-left-width").offset().left;
+        $(".header__left").css('margin-left', lw);
+    }
+    left_width();
+
+    
+    // header animation
+
+    function anim1(){
+        $(".header").mousemove( function(e) {
+            var h_width = $(".header").width();    
+            var pos = e.pageX;
+            var pos_pers = (100 - (pos/h_width)*100);
+            console.log(pos_pers);
+            $(".js-anim1").css('width', pos_pers+'%');
+            $(".js-anim-round").css('left', pos_pers+'%');
+        });
+
+    }
+    anim1();
+
+
+
+    $(window).resize(function() {
+        left_width();    
+    });
 	
 });
