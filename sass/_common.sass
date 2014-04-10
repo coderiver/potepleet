@@ -81,8 +81,9 @@ body
 	top: 0
 	left: 0
 	bottom: 0
-	width: 100%
+	width: 50%
 	z-index: 2
+	overflow: hidden
 .header__rightbg
 	position: absolute
 	top: 0
@@ -103,14 +104,9 @@ body
 	top: 0
 	bottom: 0
 	left: 0
-	width: 50% 
-	overflow: hidden
-	background: #e5eaec url(../img/topper1-bg.png) 49% 149px no-repeat
-	background-attachment: fixed 
-	img
-		position: absolute
-		top: 149px
-		right: -520px		 	 			
+	width: 100% 
+	
+	background: #e5eaec url(../img/topper1-bg.png) 49% 149px no-repeat		 	 			
 .header__topper
 	position: relative
 	+clr
@@ -129,9 +125,9 @@ body
 .header__mid
 	position: absolute
 	top: 60px
-	left: 50%
 	margin-left: -47px 
 	text-align: center
+	z-index: 2
 	span
 		display: inline-block
 		width: 94px
