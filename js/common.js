@@ -39,14 +39,15 @@ $(document).ready(function() {
     // header animation
 
     function anim1(){
+        var window_width = $(window).width();
+        $(".header__animation").css('width', window_width);
+        
         $(".header").mousemove( function(e) {
-            var h_width = $(".header").width();
-            var window_width = $(window).width();    
+            var h_width = $(".header").width();  
             var pos = e.pageX;
             var pos_pers = (100 - (pos/h_width)*100);
             console.log(pos_pers);
             $(".js-anim1").css('width', pos_pers+'%');
-            $(".header__animation").css('width', window_width);
             $(".js-anim-round").css('left', pos_pers+'%');
         });
 
