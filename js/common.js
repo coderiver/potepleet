@@ -31,14 +31,14 @@ $(document).ready(function() {
         var window_width = $(window).width();
         $(".header__animation").css('width', window_width);
         
-        // $(".header").mousemove( function(e) {
-        //     var h_width = $(".header").width();  
-        //     var pos = e.pageX;
-        //     var pos_pers = (100 - (pos/h_width)*100);
-        //     console.log(pos_pers);
-        //     $(".js-anim1").css('width', pos_pers+'%');
-        //     $(".js-anim-round").css('left', pos_pers+'%');
-        // });
+        $(".header").mousemove( function(e) {
+            var h_width = $(".header").width();  
+            var pos = e.pageX;
+            var pos_pers = (100 - (pos/h_width)*100);
+            console.log(pos_pers);
+            $(".js-anim1").css('width', pos_pers+'%');
+            $(".js-anim-round").css('left', pos_pers+'%');
+        });
 
     }
     anim1();
