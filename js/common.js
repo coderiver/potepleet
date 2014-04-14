@@ -49,12 +49,25 @@ $(document).ready(function() {
         var page = $(this).attr("href");
     
         $('html, body').animate({
-            scrollTop: $(page).offset().top
+            scrollTop: $(page).offset().top - 89
         }, 500);
         return false;
     });
 
-    // contacts tabs
+    // fixed nav
+
+    function topper_fixed(){
+        var nav = $(".js-topper-wrap");
+        var top = nav.offset().top;
+        if ($(window).scrollTop() >= top) {
+            $(".js-topper").addClass('is-fixed');
+        }
+        else{
+            $(".js-topper").removeClass('is-fixed');
+        };
+    };
+    topper_fixed();
+
 
     // tabs
     function tab() {
@@ -82,6 +95,9 @@ $(document).ready(function() {
 
     $(window).resize(function() {
         left_width();    
+    });
+    $(window).scroll(function(){
+        topper_fixed();
     });
 	
 });
