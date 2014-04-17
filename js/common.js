@@ -45,6 +45,17 @@ $(document).ready(function() {
 
     // nav scroll
 
+    function scrollNav(){
+        $('.js-section').each(function(){
+            var pos = $(this).offset().top;
+            var id = $(this).attr('id');
+            if( $(window).scrollTop() >= (pos - 89)){
+                $('.nav ul li a').removeClass('is-active');
+                $('[href = #'+id+']').addClass('is-active');
+            }
+        });
+    }
+
     $(".nav a").click(function (){
         var page = $(this).attr("href");
     
@@ -94,10 +105,12 @@ $(document).ready(function() {
 
 
     $(window).resize(function() {
-        left_width();    
+        left_width();
+        anim1();    
     });
     $(window).scroll(function(){
         topper_fixed();
+        scrollNav();
     });
 	
 });
