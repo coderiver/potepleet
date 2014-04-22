@@ -40,7 +40,7 @@ body { font-size: 15px; font-family: "RobotoRegular", sans-serif; line-height: 1
 
 .header__rightbg { position: absolute; top: 0; right: 0; left: 0; bottom: 0; overflow: hidden; background: #f5f0df; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f6f3e4), color-stop(100%, #f2ebd8)); background-image: -webkit-linear-gradient(#f6f3e4, #f2ebd8); background-image: -moz-linear-gradient(#f6f3e4, #f2ebd8); background-image: -o-linear-gradient(#f6f3e4, #f2ebd8); background-image: linear-gradient(#f6f3e4, #f2ebd8); z-index: 1; }
 .header__rightbg .container { position: relative; z-index: 2; }
-.header__rightbg .header__animation2 { position: absolute; top: 0; left: 0; right: 0; bottom: 0; z-index: 1; background: #e5eaec url(../img/topper2-bg.png) 46% 147px no-repeat; }
+.header__rightbg .header__animation2 { position: absolute; top: 0; left: 0; right: 0; bottom: 0; z-index: 1; background: #f4f0de url(../img/topper2-bg.png) 46% 147px no-repeat; }
 
 .header__animation { position: absolute; top: 0; bottom: 0; left: 0; width: 100%; background: #e5eaec url(../img/topper1-bg.png) 46% 147px no-repeat; }
 
@@ -146,6 +146,7 @@ body { font-size: 15px; font-family: "RobotoRegular", sans-serif; line-height: 1
 .services__col:first-child { margin-left: 0; }
 
 .services__title { font-family: "RobotoBlack", sans-serif; min-height: 50px; font-size: 21px; color: #464441; line-height: 1.2; margin-bottom: 30px; }
+.services__title.short { padding-top: 26px; margin-bottom: 4px; }
 
 .services__lists { *zoom: 1; }
 .services__lists:after { content: " "; display: table; clear: both; }
