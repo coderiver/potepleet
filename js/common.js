@@ -6,13 +6,44 @@ $(document).ready(function() {
         center: [55.733835, 37.588227],
         zoom: 12,
         controls: []
-    });
+    }),
+
+        // Создаем метку с помощью вспомогательного класса.
+        myPlacemark1 = new ymaps.Placemark([55.733835, 37.588227], {
+            // Свойства.
+            // Содержимое иконки, балуна и хинта.
+            iconContent: '1',
+            balloonContent: 'Балун',
+            hintContent: 'Стандартный значок метки'
+        }, {
+            // Опции.
+            // Стандартная фиолетовая иконка.
+            preset: 'twirl#violetIcon'
+        });
+
+     myMap.geoObjects
+        .add(myPlacemark1)
 
     var myMap2 = new ymaps.Map('YMapsID2', {
         center: [59.939095, 30.315868],
         zoom: 12,
         controls: []
-    });
+    }),
+    // Создаем метку с помощью вспомогательного класса.
+        myPlacemark2 = new ymaps.Placemark([59.939095, 30.315868], {
+            // Свойства.
+            // Содержимое иконки, балуна и хинта.
+            iconContent: '1',
+            balloonContent: 'Балун',
+            hintContent: 'Стандартный значок метки'
+        }, {
+            // Опции.
+            // Стандартная фиолетовая иконка.
+            preset: 'twirl#violetIcon'
+        });
+        myMap2.geoObjects
+            .add(myPlacemark2)
+    
 
     });
 
