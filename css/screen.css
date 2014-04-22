@@ -59,7 +59,7 @@ body { font-size: 15px; font-family: "RobotoRegular", sans-serif; line-height: 1
 .topper .topper__inner.is-fixed { position: fixed; top: 0; left: 0; right: 0; bottom: 0; }
 
 .logo { float: left; padding-top: 20px; }
-.logo a { display: block; background: url('../img/icons-sad81582512.png') 0 0 no-repeat; width: 228px; height: 54px; }
+.logo a { display: block; background: url('../img/icons-s894171e019.png') 0 0 no-repeat; width: 228px; height: 54px; }
 
 .topper__phone { float: right; font-family: "RobotoBlack", sans-serif; color: #464441; line-height: 92px; }
 
